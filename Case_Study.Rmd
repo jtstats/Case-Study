@@ -1,0 +1,7 @@
+---
+title: "Case-Study"
+author: "Jingyi"
+date: "10/20/2019"
+output: html_document
+---
+
