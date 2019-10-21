@@ -5,3 +5,41 @@ date: "10/20/2019"
 output: html_document
 ---
 
+This example is based entirely on live-coding and uses the NYC Airbnb data. The data can be imported using the p8105.datasets package:
+```{r}
+
+library(p8105.datasets)
+
+data(nyc_airbnb)
+
+library(tidyverse)
+
+```
+
+As always, I’ll do today’s coding in a R Markdown file, sitting in an GitHub Repo / R Project.
+
+## Understanding variables
+
+First, let’s take a few minutes to understand the dataset and the variables it contains.
+
+```{r}
+
+# View(nyc_airbnb)
+str(nyc_airbnb)
+
+nyc_airbnb %>%
+  count(room_type)
+
+nyc_airbnb %>%
+  count(neighbourhood_group)
+
+```
+
+## Brainstorming questions
+
+A major element of data science is to ask questions, and this dataset provides some rich opportunities. For example, we might ask:
+
+Does rating vary by neighborhood, room type, or both?
+How is price related to other variables?
+Where are rentals located?
+We’ll take a few minutes as a class to brainstorm some additional questions, and then try to answer some of them.
